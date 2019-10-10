@@ -9,11 +9,7 @@ import * as helper from './../../utils/helper';
 import { __ } from '@wordpress/i18n';
 import { Component, Fragment } from '@wordpress/element';
 import { IconButton, Toolbar } from '@wordpress/components';
-import {
-	BlockControls,
-	MediaUpload,
-	MediaUploadCheck,
-} from '@wordpress/block-editor';
+import { BlockControls, MediaUpload, MediaUploadCheck } from '@wordpress/block-editor';
 
 class Controls extends Component {
 	constructor() {
@@ -30,7 +26,6 @@ class Controls extends Component {
 	render() {
 		const { attributes } = this.props;
 		const { images } = attributes;
-
 		const hasImages = !! images.length;
 
 		return (

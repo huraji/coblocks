@@ -53,10 +53,17 @@ class Edit extends Component {
 
 		return (
 			<Fragment>
-				<Controls { ...this.props } />
-				<Inspector { ...this.props } />
+				{ isSelected && (
+					<Controls
+						{ ...this.props }
+					/>
+				) }
+				{ isSelected && (
+					<Inspector
+						{ ...this.props }
+					/>
+				) }
 				<GalleryDropZone { ...this.props } />
-
 				<div className={ classes }>
 					<Logos { ...this.props } images={ images } />
 

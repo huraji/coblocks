@@ -72,6 +72,7 @@ class Edit extends Component {
 			paddingSize,
 			contentAlign,
 			showInserter,
+			verticalAlignment,
 		} = attributes;
 
 		const parentId = wp.data
@@ -112,6 +113,7 @@ class Edit extends Component {
 				[ `has-${ paddingSize }-padding` ]:
 					paddingSize && paddingSize !== 'advanced',
 				[ `has-${ marginSize }-margin` ]: marginSize && marginSize !== 'advanced',
+				[ `is-vertically-aligned-${ verticalAlignment }` ]: verticalAlignment,
 			}
 		);
 

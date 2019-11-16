@@ -69,6 +69,7 @@ const variations = {
 	customBackgroundColor: [ '#123456' ],
 	hasParallax: [ true, false ],
 	focalPoint: [ undefined, { x: 0, y: 0 }, { x: 0.33663366336633666, y: 0.8335193452380952 } ],
+	verticalAlignment: [ undefined, 'center', 'top', 'bottom' ],
 	videoMuted: [ true, false ],
 	videoLoop: [ true, false ],
 	openPopover: [ true, false ],

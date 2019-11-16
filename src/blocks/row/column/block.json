@@ -17,6 +17,9 @@
 		"showInserter": {
 			"type": "boolean",
 			"default": true
+		},
+		"verticalAlignment": {
+			"type": "string"
 		}
 	}
 }

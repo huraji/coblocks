@@ -15,18 +15,20 @@ if (!defined('WP_UNINSTALL_PLUGIN')) {
     die;
 }
 
-$SETTINGS_API = 'coblocks_settings_api';
+$__options = array(
+	'coblocks_settings_api',
+);
 
-if ( get_option($SETTINGS_API) === true ) {
-    delete_option($SETTINGS_API);
-
-    if ( function_exists( 'is_multisite' ) && is_multisite() ) { 
-        // for site options in Multisite
-        delete_site_option($SETTINGS_API);
+foreach ( $__options as $option_name ) {
+	if ( get_option( $option_name ) === true ) {
+        if ( function_exists( 'is_multisite' ) && is_multisite() ) { 
+            // for site options in Multisite
+            delete_site_option( $option_name );
+        } else {
+                delete_option( $option_name );
         }
+    }
 }
 
-
-
-unset($SETTINGS_API);
+unset( $__options );
 ?>

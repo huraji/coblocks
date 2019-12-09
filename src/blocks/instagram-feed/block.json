@@ -1,0 +1,21 @@
+{
+	"name": "coblocks/instagram-feed",
+	"category": "coblocks",
+	"attributes": {
+		"token": {
+			"type": "string",
+			"default": ""
+		},
+		"count": {
+			"type": "number",
+			"default": 4
+		},
+		"columns": {
+			"type": "number",
+			"default": 4
+		},
+		"className": {
+			"type": "string"
+		}
+	}
+}

@@ -65,6 +65,7 @@ import * as gist from './blocks/gist';
 import * as hero from './blocks/hero';
 import * as highlight from './blocks/highlight';
 import * as icon from './blocks/icon';
+import * as instagramFeed from './blocks/instagram-feed';
 import * as logos from './blocks/logos';
 import * as map from './blocks/map';
 import * as masonry from './blocks/gallery-masonry';
@@ -145,6 +146,7 @@ export const registerCoBlocksBlocks = () => {
 		hero,
 		highlight,
 		icon,
+		instagramFeed,
 		logos,
 		map,
 		masonry,

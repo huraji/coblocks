@@ -1,0 +1,14 @@
+// Supported icons.
+.instagram-entries {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	.instagram-entry {
+		-ms-flex: auto;
+		position: relative;
+		box-sizing: border-box;
+		img {
+			width: 100%;
+		}
+	}
+}
